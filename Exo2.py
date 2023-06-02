@@ -1,3 +1,4 @@
+import sys
 morse = input("Entrer le code en morse\n")
 L = len(morse)
 if 0 < L < 100000:
@@ -9,8 +10,10 @@ if 0 < L < 100000:
         for x in range(N):
             dico.append(input())
             M.append(len(dico[x]))
-            if 0 >= M[x] >= 20:
+            if (0<M[x]< 20):
+                
+            else:
                 print(dico[x], 'est trop long')
-                break
-        else:
+                
+raise SystemExit(1)
             

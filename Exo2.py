@@ -10,10 +10,8 @@ if 0 < L < 100000:
         for x in range(N):
             dico.append(input())
             M.append(len(dico[x]))
-            if (0<M[x]< 20):
-                
-            else:
+            if (M[x]>=20):
                 print(dico[x], 'est trop long')
-                
+                raise SystemExit(1)
+
 raise SystemExit(1)
-            

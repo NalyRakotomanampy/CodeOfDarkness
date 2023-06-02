@@ -9,6 +9,7 @@ if 0 < L < 100000:
         for x in range(N):
             dico.append(input())
             M.append(len(dico[x]))
-            if 0 < M[x] < 5:
+            if 0 < M[x] < 20:
+
             else :
-                return 0
+                print(dico[x], 'est trop court')
